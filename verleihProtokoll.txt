@@ -1,0 +1,192 @@
+Tue May 14 13:40:18 CEST 2019: Ausleihe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:18 CEST 2019: Ausleihe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:18 CEST 2019: Rückgabe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:18 CEST 2019: Rückgabe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:18 CEST 2019: Ausleihe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:18 CEST 2019: Ausleihe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:18 CEST 2019: Ausleihe
+PCVideospiel:
+    Titel: Company of Heroes
+    Kommentar: Tales of Valor
+    System: Windows Vista/XP
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Ausleihe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Ausleihe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Rückgabe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Rückgabe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Ausleihe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Ausleihe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:27 CEST 2019: Ausleihe
+PCVideospiel:
+    Titel: Company of Heroes
+    Kommentar: Tales of Valor
+    System: Windows Vista/XP
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 14 13:40:35 CEST 2019: Ausleihe
+CD:
+    Titel: Wincing the Night Away
+    Kommentar: Die fleißigsten Slacker der Indie-Szene 
+    Interpret: the Shins
+    Spiellänge: 69
+am 14.5.2019 verliehen an
+    Kundennummer: 123462
+    Name: John Rambo
+    Telefon: unbekannt
+    Anschrift:
+    Fightstreet 99
+    60311 Frankfurt
+Tue May 14 13:40:40 CEST 2019: Rückgabe
+CD:
+    Titel: Greatest Hits Vol. 1 & Vol. 2
+    Kommentar: 2 wundervolle Scheiben
+    Interpret: Billy Joel
+    Spiellänge: 140
+am 2.4.2019 verliehen an
+    Kundennummer: 123457
+    Name: Kai Konrad
+    Telefon: unbekannt
+    Anschrift:
+    Kannenweg 23
+    21868 Stade
