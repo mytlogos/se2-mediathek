@@ -86,8 +86,6 @@ public class VerleihServiceImpl extends AbstractObservableService
         assert medienImBestand(
                 medien) : "Vorbedingung verletzt: medienImBestand(medien)";
 
-        // FIXME: (DominikB) Es muss noch geprüft werden, ob es vorgemerkt ist und wenn ja, ausleihen darf
-        // d.h. auch dementsprechend @require ändern
         return sindAlleNichtVerliehen(medien);
     }
 
@@ -116,7 +114,6 @@ public class VerleihServiceImpl extends AbstractObservableService
         assert medienImBestand(
                 medien) : "Vorbedingung verletzt: medienImBestand(medien)";
         boolean result = true;
-        
         for (Medium medium : medien)
         {
             if (istVerliehen(medium))

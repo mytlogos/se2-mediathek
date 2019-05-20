@@ -18,7 +18,9 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammServiceImpl;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandServiceImpl;
 import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
 
 /**
