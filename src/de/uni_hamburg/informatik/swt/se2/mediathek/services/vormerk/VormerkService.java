@@ -5,8 +5,9 @@ import java.util.List;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Kunde;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.ObservableService;
 
-public interface VormerkService {
+public interface VormerkService extends ObservableService {
 
 	/**
 	 * Prüft ob der Kunde das Medium vormerken darf.
@@ -18,8 +19,6 @@ public interface VormerkService {
 	 * @require kunde != null && medium != null
 	 */
 	boolean vormerkenMoeglich(Kunde kunde, Medium medium);
-
-	// FIXME: (DominikB) Ich finde es wäre besser eine Exception zu werfen oder boolean zurückzugeben, als stumm zu versagen
 
 	/**
 	 * Merkt das Medium für den Kunden vor.
@@ -91,4 +90,6 @@ public interface VormerkService {
 	 * @ensure result != null && result.size() <=3 && !result.contains(null)
 	 */
 	List<Kunde> getVormerker(Medium medium);
+
+	boolean darfMedienEntleihen(Kunde kunde, List<Medium> medien);
 }

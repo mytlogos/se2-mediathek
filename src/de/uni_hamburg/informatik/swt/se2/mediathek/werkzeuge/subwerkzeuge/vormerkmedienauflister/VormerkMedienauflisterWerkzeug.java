@@ -12,7 +12,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
-import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.ObservableSubWerkzeug;
 
 /**
@@ -88,9 +88,9 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
         	
         	// FIXME: (DominikB) Vorgemerkte Medien werden nicht angezeigt
         	
-        	VerleihService verleihService = Main.VERLEIH_SERVICE;
+        	VerleihService verleihService = Services.VERLEIH_SERVICE;
         	Kunde entleiher = verleihService.istVerliehen(medium) ? verleihService.getEntleiherFuer(medium) : null;
-            List<Kunde> vormerker = Main.VORMERK_SERVICE.getVormerker(medium);
+            List<Kunde> vormerker = Services.VORMERK_SERVICE.getVormerker(medium);
             Kunde vormerker1 = vormerker.size() > 0 ? vormerker.get(0) : null;
             Kunde vormerker2 = vormerker.size() > 1 ? vormerker.get(1) : null;
             Kunde vormerker3 = vormerker.size() > 2 ? vormerker.get(2) : null;
@@ -137,6 +137,7 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
         };
         _medienbestand.registriereBeobachter(beobachter);
         _verleihService.registriereBeobachter(beobachter);
+        Services.VORMERK_SERVICE.registriereBeobachter(beobachter);
     }
 
     /**

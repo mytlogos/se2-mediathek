@@ -15,6 +15,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.Kundenst
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.ProtokollierException;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.SubWerkzeugObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.subwerkzeuge.ausleihemedienauflister.AusleiheMedienauflisterWerkzeug;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.subwerkzeuge.kundenauflister.KundenauflisterWerkzeug;
@@ -148,6 +149,15 @@ public class AusleihWerkzeug
                 aktualisiereAusleihButton();
             }
         });
+        Services.VORMERK_SERVICE.registriereBeobachter(new ServiceObserver()
+        {
+
+            @Override
+            public void reagiereAufAenderung()
+            {
+                aktualisiereAusleihButton();
+            }
+        });
     }
 
     /**
@@ -180,6 +190,7 @@ public class AusleihWerkzeug
             {
                 zeigeAusgewaehltenKunden();
                 aktualisiereAusleihButton();
+                
             }
         });
     }
@@ -216,7 +227,7 @@ public class AusleihWerkzeug
         // Medien nur vom ersten Vormerker ausgeliehen werden können, gemäß
         // Anforderung d).
         boolean ausleiheMoeglich = (kunde != null) && !medien.isEmpty()
-                && _verleihService.sindAlleNichtVerliehen(medien);
+                && _verleihService.sindAlleNichtVerliehen(medien) && Services.VORMERK_SERVICE.darfMedienEntleihen(kunde, medien);
 
         return ausleiheMoeglich;
     }

@@ -10,7 +10,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Kunde;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Verleihkarte;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.AbstractObservableService;
-import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 
 /**
  * Diese Klasse implementiert das Interface VerleihService. Siehe dortiger
@@ -86,8 +86,14 @@ public class VerleihServiceImpl extends AbstractObservableService
         assert medienImBestand(
                 medien) : "Vorbedingung verletzt: medienImBestand(medien)";
 
-        // FIXME: (DominikB) Es muss noch geprüft werden, ob es vorgemerkt ist und wenn ja, ausleihen darf
-        // d.h. auch dementsprechend @require ändern
+        for(Medium medium : medien )   
+        {
+        	if(!Services.VORMERK_SERVICE.darfMediumEntleihen(kunde, medium))
+        	{
+        		return false;
+        	}
+        }
+                
         return sindAlleNichtVerliehen(medien);
     }
 
@@ -191,6 +197,9 @@ public class VerleihServiceImpl extends AbstractObservableService
                     ausleihDatum);
 
             _verleihkarten.put(medium, verleihkarte);
+            if(Services.VORMERK_SERVICE.istVorgemerkt(kunde, medium)) {
+            	Services.VORMERK_SERVICE.entferneVormerkung(kunde, medium);
+            }
             _protokollierer.protokolliere(
                     VerleihProtokollierer.EREIGNIS_AUSLEIHE, verleihkarte);
         }
@@ -202,13 +211,13 @@ public class VerleihServiceImpl extends AbstractObservableService
     @Override
     public boolean kundeImBestand(Kunde kunde)
     {
-        return Main.KUNDENSTAMM.enthaeltKunden(kunde);
+        return Services.KUNDENSTAMM.enthaeltKunden(kunde);
     }
 
     @Override
     public boolean mediumImBestand(Medium medium)
     {
-        return Main.MEDIENBESTAND.enthaeltMedium(medium);
+        return Services.MEDIENBESTAND.enthaeltMedium(medium);
     }
 
     @Override

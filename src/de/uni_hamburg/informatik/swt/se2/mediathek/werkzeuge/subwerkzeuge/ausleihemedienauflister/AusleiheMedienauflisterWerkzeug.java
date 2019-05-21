@@ -12,7 +12,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
-import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.ObservableSubWerkzeug;
 
 /**
@@ -86,7 +86,7 @@ public class AusleiheMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // Ist dies korrekt implementiert, erscheint in der Ausleiheansicht
             // der Name des Vormerkers, an den ein Medium ausgeliehen werden
             // darf, gemäß Anforderung d).
-            List<Kunde> vormerker = Main.VORMERK_SERVICE.getVormerker(medium);
+            List<Kunde> vormerker = Services.VORMERK_SERVICE.getVormerker(medium);
 			Kunde ersterVormerker = vormerker.size() > 0 ? vormerker.get(0) : null;
 
             medienFormatierer.add(new AusleiheMedienFormatierer(medium,
@@ -131,6 +131,7 @@ public class AusleiheMedienauflisterWerkzeug extends ObservableSubWerkzeug
         };
         _medienbestand.registriereBeobachter(beobachter);
         _verleihService.registriereBeobachter(beobachter);
+        Services.VORMERK_SERVICE.registriereBeobachter(beobachter);
     }
 
     /**

@@ -354,3 +354,93 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+Tue May 21 11:45:13 CEST 2019: Ausleihe
+CD:
+    Titel: Breakaway
+    Kommentar: Nachfolger vom Album Tankful
+    Interpret: Kelly Clarkson
+    Spiellänge: 87
+am 21.5.2019 verliehen an
+    Kundennummer: 123461
+    Name: Anna Kurnikowa
+    Telefon: unbekannt
+    Anschrift:
+    Osterweg 1
+    22670 Hamburg
+Tue May 21 11:46:01 CEST 2019: Ausleihe
+CD:
+    Titel: One of the Boys
+    Kommentar: Das ist das neue Album von Katy Perry One of the Boys inklusive der Hitsingles Hot N Cold und I Kissed A Girl.
+    Interpret: Katy Perry
+    Spiellänge: 70
+am 21.5.2019 verliehen an
+    Kundennummer: 123464
+    Name: Lara Croft
+    Telefon: unbekannt
+    Anschrift:
+    Abenteuerallee 33
+    24104 Kiel
+Tue May 21 11:54:46 CEST 2019: Ausleihe
+CD:
+    Titel: Breakaway
+    Kommentar: Nachfolger vom Album Tankful
+    Interpret: Kelly Clarkson
+    Spiellänge: 87
+am 21.5.2019 verliehen an
+    Kundennummer: 123457
+    Name: Kai Konrad
+    Telefon: unbekannt
+    Anschrift:
+    Kannenweg 23
+    21868 Stade
+Tue May 21 12:10:20 CEST 2019: Ausleihe
+CD:
+    Titel: Breakaway
+    Kommentar: Nachfolger vom Album Tankful
+    Interpret: Kelly Clarkson
+    Spiellänge: 87
+am 21.5.2019 verliehen an
+    Kundennummer: 123465
+    Name: John. J. Ava
+    Telefon: unbekannt
+    Anschrift:
+    Wurtstrasse 23
+    58507 Köln
+Tue May 21 12:11:37 CEST 2019: Ausleihe
+CD:
+    Titel: Disturbia
+    Kommentar: gut
+    Interpret: Rihanna
+    Spiellänge: 90
+am 21.5.2019 verliehen an
+    Kundennummer: 123465
+    Name: John. J. Ava
+    Telefon: unbekannt
+    Anschrift:
+    Wurtstrasse 23
+    58507 Köln
+Tue May 21 12:13:30 CEST 2019: Ausleihe
+PCVideospiel:
+    Titel: Company of Heroes
+    Kommentar: Tales of Valor
+    System: Windows Vista/XP
+am 21.5.2019 verliehen an
+    Kundennummer: 123459
+    Name: Julia Schmidt
+    Telefon: unbekannt
+    Anschrift:
+    Julianenallee22
+    24103 Kiel
+Tue May 21 12:15:37 CEST 2019: Ausleihe
+CD:
+    Titel: Wincing the Night Away
+    Kommentar: Die fleißigsten Slacker der Indie-Szene 
+    Interpret: the Shins
+    Spiellänge: 69
+am 21.5.2019 verliehen an
+    Kundennummer: 123463
+    Name: Chuck Norris
+    Telefon: unbekannt
+    Anschrift:
+    Supermannweg 100
+    80331 München

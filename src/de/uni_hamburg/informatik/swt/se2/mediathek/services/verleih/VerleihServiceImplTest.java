@@ -17,9 +17,9 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Verleihkarte;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
-import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
 
 /**
  * @author SE2-Team
@@ -35,14 +35,14 @@ public class VerleihServiceImplTest
     public VerleihServiceImplTest()
     {
         _datum = new Datum(3, 4, 2009);
-        KundenstammService kundenstamm = Main.KUNDENSTAMM;
+        KundenstammService kundenstamm = Services.KUNDENSTAMM;
         _kunde = new Kunde(new Kundennummer(123456), "ich", "du");
 
         _vormerkkunde = new Kunde(new Kundennummer(666999), "paul", "panter");
 
         kundenstamm.fuegeKundenEin(_kunde);
         kundenstamm.fuegeKundenEin(_vormerkkunde);
-        MedienbestandService medienbestand = Main.MEDIENBESTAND;
+        MedienbestandService medienbestand = Services.MEDIENBESTAND;
         Medium medium = new CD("CD1", "baz", "foo", 123);
         medienbestand.fuegeMediumEin(medium);
         medium = new CD("CD2", "baz", "foo", 123);

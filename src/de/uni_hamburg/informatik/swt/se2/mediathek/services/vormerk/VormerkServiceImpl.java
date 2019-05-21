@@ -9,9 +9,11 @@ import java.util.Queue;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Kunde;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
-import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.AbstractObservableService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 
-public class VormerkServiceImpl implements VormerkService {
+public class VormerkServiceImpl extends AbstractObservableService
+	implements VormerkService {
 
 	private final Map<Medium, Queue<Kunde>> _vormerkungen;
 
@@ -27,12 +29,13 @@ public class VormerkServiceImpl implements VormerkService {
 		Queue<Kunde> vormerker = _vormerkungen.get(medium);
 
 		return (vormerker == null || vormerker.size() < 3 ) 
-				&& !Main.VERLEIH_SERVICE.istVerliehenAn(kunde, medium) 
+				&& !Services.VERLEIH_SERVICE.istVerliehenAn(kunde, medium) 
 				&& !istVorgemerkt(kunde, medium);
 	}
 
 	@Override
 	public void vormerken(Kunde kunde, Medium medium) {
+		
 		assert vormerkenMoeglich(kunde, medium);
 
 		Queue<Kunde> vormerker = _vormerkungen.get(medium);
@@ -40,11 +43,11 @@ public class VormerkServiceImpl implements VormerkService {
 			vormerker = new LinkedList<>();
 			_vormerkungen.put(medium, vormerker);
 		}
-		// FIXME: (DominikB) Ich finde es wäre besser eine Exception zu werfen oder boolean zurückzugeben, als stumm zu versagen
 		if (!vormerker.contains(kunde))
 		{
 			vormerker.add(kunde);	
-		}		
+		}
+		informiereUeberAenderung();
 	}
 
 	@Override
@@ -102,5 +105,16 @@ public class VormerkServiceImpl implements VormerkService {
 			vormerker = vormerker.subList(0, 3);
 		}
 		return vormerker;
+	}
+
+	@Override
+	public boolean darfMedienEntleihen(Kunde kunde, List<Medium> medien) {
+		for(Medium medium : medien)
+		{
+			if(!darfMediumEntleihen(kunde, medium)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

@@ -12,7 +12,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
-import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.Services;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.SubWerkzeugObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.subwerkzeuge.kundenauflister.KundenauflisterWerkzeug;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.subwerkzeuge.kundendetailanzeiger.KundenDetailAnzeigerWerkzeug;
@@ -146,6 +146,15 @@ public class VormerkWerkzeug
                 aktualisiereVormerkButton();
             }
         });
+        Services.VORMERK_SERVICE.registriereBeobachter(new ServiceObserver()
+        {
+
+            @Override
+            public void reagiereAufAenderung()
+            {
+                aktualisiereVormerkButton();
+            }
+        });
     }
 
     /**
@@ -219,7 +228,7 @@ public class VormerkWerkzeug
 		}
 
         for (Medium medium : medien) {
-        	if (!Main.VORMERK_SERVICE.vormerkenMoeglich(kunde, medium)) {
+        	if (!Services.VORMERK_SERVICE.vormerkenMoeglich(kunde, medium)) {
 				return false;
 			}
 		}
@@ -239,7 +248,7 @@ public class VormerkWerkzeug
             .getSelectedMedien();
         Kunde selectedKunde = _kundenAuflisterWerkzeug.getSelectedKunde();
         // TODO für Aufgabenblatt 6 (nicht löschen): Vormerken einbauen
-        Main.VORMERK_SERVICE.vormerken(selectedKunde, selectedMedien);
+        Services.VORMERK_SERVICE.vormerken(selectedKunde, selectedMedien);
     }
 
     /**

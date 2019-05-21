@@ -105,4 +105,31 @@ abstract class AbstractMedium implements Medium
         _titel = titel;
     }
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((_titel == null) ? 0 : _titel.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		AbstractMedium other = (AbstractMedium) obj;
+		if (_titel == null) {
+			if (other._titel != null)
+				return false;
+		} else if (!_titel.equals(other._titel))
+			return false;
+		return true;
+	}
+    
+    
+
 }
