@@ -23,17 +23,17 @@ public final class Services {
     static  {
     	DatenEinleser datenEinleser = new DatenEinleser(Main.MEDIEN_DATEI,
                     Main.KUNDEN_DATEI);
-            try {
-				datenEinleser.leseDaten();
-			} catch (DateiLeseException e) {
-				e.printStackTrace();
-			}
-            MEDIENBESTAND = new MedienbestandServiceImpl(
-                    datenEinleser.getMedien());
-            KUNDENSTAMM = new KundenstammServiceImpl(
-                    datenEinleser.getKunden());
-            VERLEIH_SERVICE = new VerleihServiceImpl(datenEinleser.getVerleihkarten());
-            VORMERK_SERVICE = new VormerkServiceImpl();
+        try {
+			datenEinleser.leseDaten();
+		} catch (DateiLeseException e) {
+			e.printStackTrace();
+		}
+        MEDIENBESTAND = new MedienbestandServiceImpl(
+                datenEinleser.getMedien());
+        KUNDENSTAMM = new KundenstammServiceImpl(
+                datenEinleser.getKunden());
+        VERLEIH_SERVICE = new VerleihServiceImpl(datenEinleser.getVerleihkarten());
+        VORMERK_SERVICE = new VormerkServiceImpl();
     }
 	
 	

@@ -227,7 +227,8 @@ public class AusleihWerkzeug
         // Medien nur vom ersten Vormerker ausgeliehen werden können, gemäß
         // Anforderung d).
         boolean ausleiheMoeglich = (kunde != null) && !medien.isEmpty()
-                && _verleihService.sindAlleNichtVerliehen(medien) && Services.VORMERK_SERVICE.darfMedienEntleihen(kunde, medien);
+                && _verleihService.sindAlleNichtVerliehen(medien) 
+                && Services.VORMERK_SERVICE.darfMedienEntleihen(kunde, medien);
 
         return ausleiheMoeglich;
     }
