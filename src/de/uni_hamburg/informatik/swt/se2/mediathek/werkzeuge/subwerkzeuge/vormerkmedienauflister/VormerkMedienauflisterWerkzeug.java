@@ -12,6 +12,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.ObservableSubWerkzeug;
 
 /**
@@ -84,10 +85,15 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // Entleiher und möglichen Vormerkern ausgestattet werden.
             // Ist dies korrekt implementiert, erscheinen in der Vormerkansicht
             // die Namen des Entleihers und der möglichen 3 Vormerker.
-            Kunde entleiher = null;
-            Kunde vormerker1 = null;
-            Kunde vormerker2 = null;
-            Kunde vormerker3 = null;
+        	
+        	// FIXME: (DominikB) Vorgemerkte Medien werden nicht angezeigt
+        	
+        	VerleihService verleihService = Main.VERLEIH_SERVICE;
+        	Kunde entleiher = verleihService.istVerliehen(medium) ? verleihService.getEntleiherFuer(medium) : null;
+            List<Kunde> vormerker = Main.VORMERK_SERVICE.getVormerker(medium);
+            Kunde vormerker1 = vormerker.size() > 0 ? vormerker.get(0) : null;
+            Kunde vormerker2 = vormerker.size() > 1 ? vormerker.get(1) : null;
+            Kunde vormerker3 = vormerker.size() > 2 ? vormerker.get(2) : null;
 
             medienFormatierer.add(new VormerkMedienFormatierer(medium,
                     entleiher, vormerker1, vormerker2, vormerker3));

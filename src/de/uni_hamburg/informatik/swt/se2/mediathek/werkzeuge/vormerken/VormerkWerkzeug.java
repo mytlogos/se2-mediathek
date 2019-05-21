@@ -12,6 +12,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.startup.Main;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.SubWerkzeugObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.subwerkzeuge.kundenauflister.KundenauflisterWerkzeug;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.subwerkzeuge.kundendetailanzeiger.KundenDetailAnzeigerWerkzeug;
@@ -212,9 +213,18 @@ public class VormerkWerkzeug
         // TODO für Aufgabenblatt 6 (nicht löschen): Prüfung muss noch eingebaut
         // werden. Ist dies korrekt imlpementiert, wird der Vormerk-Button gemäß
         // der Anforderungen a), b), c) und e) aktiviert.
-        boolean vormerkenMoeglich = (kunde != null) && !medien.isEmpty();
 
-        return vormerkenMoeglich;
+        if (kunde == null || medien.isEmpty()) {
+			return false;
+		}
+
+        for (Medium medium : medien) {
+        	if (!Main.VORMERK_SERVICE.vormerkenMoeglich(kunde, medium)) {
+				return false;
+			}
+		}
+
+        return true;
     }
 
     /**
@@ -227,16 +237,9 @@ public class VormerkWerkzeug
 
         List<Medium> selectedMedien = _medienAuflisterWerkzeug
             .getSelectedMedien();
-//        for () {
-//        	try {
-//        		
-//        	}catch() {
-//        		
-//        	}
-//        }
         Kunde selectedKunde = _kundenAuflisterWerkzeug.getSelectedKunde();
         // TODO für Aufgabenblatt 6 (nicht löschen): Vormerken einbauen
-
+        Main.VORMERK_SERVICE.vormerken(selectedKunde, selectedMedien);
     }
 
     /**

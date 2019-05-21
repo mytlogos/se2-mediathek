@@ -12,6 +12,8 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.services.persistenz.DateiLese
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.persistenz.DatenEinleser;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServiceImpl;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.vormerk.VormerkService;
+import de.uni_hamburg.informatik.swt.se2.mediathek.services.vormerk.VormerkServiceImpl;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.hauptwerkzeug.MediathekWerkzeug;
 
 /**
@@ -31,6 +33,7 @@ public class Main
     public static final KundenstammService KUNDENSTAMM;
     public static final MedienbestandService MEDIENBESTAND;
     public static final VerleihService VERLEIH_SERVICE;
+    public static final VormerkService VORMERK_SERVICE;
     
     static  {
     	DatenEinleser datenEinleser = new DatenEinleser(MEDIEN_DATEI,
@@ -46,7 +49,7 @@ public class Main
             KUNDENSTAMM = new KundenstammServiceImpl(
                     datenEinleser.getKunden());
             VERLEIH_SERVICE = new VerleihServiceImpl(datenEinleser.getVerleihkarten());
-        
+            VORMERK_SERVICE = new VormerkServiceImpl();
     }
 
     /**
@@ -54,8 +57,6 @@ public class Main
      */
     public static void main(String[] args)
     {
-        erstelleServices();
-
         final MediathekWerkzeug mediathekWerkzeug = new MediathekWerkzeug(
         		MEDIENBESTAND, KUNDENSTAMM, VERLEIH_SERVICE);
 
@@ -69,13 +70,4 @@ public class Main
         });
 
     }
-
-    /**
-     * Erstellt die Services und lädt die Daten.
-     */
-    private static void erstelleServices()
-    {
-        
-    }
-
 }

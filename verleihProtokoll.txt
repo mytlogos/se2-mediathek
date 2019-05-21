@@ -190,3 +190,167 @@ am 2.4.2019 verliehen an
     Anschrift:
     Kannenweg 23
     21868 Stade
+Tue May 21 09:05:55 CEST 2019: Ausleihe
+KonsolenVideospiel:
+    Titel: Mario Kart
+    Kommentar:  Neue Strecken, neue Rennfahrer, neue Fahrzeuge und 12-Spieler-Rennen
+    System:  Wii
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:05:55 CEST 2019: Ausleihe
+CD:
+    Titel: Garden State
+    Kommentar: Soundtrack
+    Interpret: Various
+    Spiellänge: 56
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:05:55 CEST 2019: Rückgabe
+KonsolenVideospiel:
+    Titel: Mario Kart
+    Kommentar:  Neue Strecken, neue Rennfahrer, neue Fahrzeuge und 12-Spieler-Rennen
+    System:  Wii
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:05:55 CEST 2019: Rückgabe
+CD:
+    Titel: Garden State
+    Kommentar: Soundtrack
+    Interpret: Various
+    Spiellänge: 56
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:05:55 CEST 2019: Ausleihe
+KonsolenVideospiel:
+    Titel: Mario Kart
+    Kommentar:  Neue Strecken, neue Rennfahrer, neue Fahrzeuge und 12-Spieler-Rennen
+    System:  Wii
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:05:55 CEST 2019: Ausleihe
+CD:
+    Titel: Garden State
+    Kommentar: Soundtrack
+    Interpret: Various
+    Spiellänge: 56
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:05:55 CEST 2019: Ausleihe
+CD:
+    Titel: Breakaway
+    Kommentar: Nachfolger vom Album Tankful
+    Interpret: Kelly Clarkson
+    Spiellänge: 87
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Ausleihe
+CD:
+    Titel: Wincing the Night Away
+    Kommentar: Die fleißigsten Slacker der Indie-Szene 
+    Interpret: the Shins
+    Spiellänge: 69
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Ausleihe
+DVD:
+    Titel: The Dark Knight
+    Kommentar: Die Fortsetzung von Batman Begins
+    Regisseur: Christopher Nolan
+    Laufzeit: 130
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Rückgabe
+CD:
+    Titel: Wincing the Night Away
+    Kommentar: Die fleißigsten Slacker der Indie-Szene 
+    Interpret: the Shins
+    Spiellänge: 69
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Rückgabe
+DVD:
+    Titel: The Dark Knight
+    Kommentar: Die Fortsetzung von Batman Begins
+    Regisseur: Christopher Nolan
+    Laufzeit: 130
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Ausleihe
+CD:
+    Titel: Wincing the Night Away
+    Kommentar: Die fleißigsten Slacker der Indie-Szene 
+    Interpret: the Shins
+    Spiellänge: 69
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Ausleihe
+DVD:
+    Titel: The Dark Knight
+    Kommentar: Die Fortsetzung von Batman Begins
+    Regisseur: Christopher Nolan
+    Laufzeit: 130
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Tue May 21 09:06:25 CEST 2019: Ausleihe
+KonsolenVideospiel:
+    Titel: Resident Evil 5
+    Kommentar: Chris Redfield, der bekannte Titelheld aus Resident Evil, ist dem Bösen rund um den Globus auf den Fersen
+    System: Xbox 360
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
